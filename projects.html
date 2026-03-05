@@ -1,32 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
-        <title>Projects - Mwanga Construction Company</title>
-        <link rel="stylesheet" href="style.css">
+        <title>Projects | Mwanga Construction</title>
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
 
-        <header>
-            <h1>Our Projects</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
+        <h2>Our Projects</h2>
 
-        <section>
-            <p>We have successfully completed housing projects, office buildings, and road construction across Tanzania.</p>
-        </section>
+        <div class="filter-buttons">
+            <button onclick="filterProjects('all')">All</button>
+            <button onclick="filterProjects('residential')">Residential</button>
+            <button onclick="filterProjects('commercial')">Commercial</button>
+        </div>
 
-        <footer>
-            <p>2026 Mwanga Construction Company</p>
-        </footer>
+        <div class="projects-grid">
+            <div class="project residential">Project 1</div>
+            <div class="project commercial">Project 2</div>
+            <div class="project residential">Project 3</div>
+        </div>
 
-        <script src="script.js"></script>
+        <script src="projects.js"></script>
+        <script src="main.js"></script>
     </body>
 </html>

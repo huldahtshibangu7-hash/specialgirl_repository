@@ -1,37 +1,28 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Contact - Mwanga Construction Company</title>
-        <link rel="stylesheet" href="style.css">
+        <title>Contact | Mwanga Construction</title>
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
 
-        <header>
-            <h1>Contact Us</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
+        <h2>Contact Us</h2>
 
-        <section>
-            <form onsubmit="return validateForm()">
-                <input type="text" id="name" placeholder="Your Name" required>
-                <input type="email" id="email" placeholder="Your Email" required>
-                <textarea id="message" placeholder="Your Message"></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-        </section>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Full Name" required>
+            <input type="email" id="email" placeholder="Email Address" required>
+            <input type="tel" id="phone" placeholder="Phone Number" required>
+            <input type="text" id="subject" placeholder="Message" required>
+            <textarea id="message" placeholder="Message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
 
-        <footer>
-            <p>2026 Mwanga Construction Company</p>
-        </footer>
+        <p id="successMessage"></p>
 
-        <script src="script.js"></script>
+        <h3>Our Location</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!"></iframe>
+
+        <script src="projects.js"></script>
+        <script src="main.js"></script>
     </body>
 </html>

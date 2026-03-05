@@ -1,36 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <title>Mwanga Construction Company</title>
-        <meta name="viewport" content="width=device-width">
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mwanga Construction | Home</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="responsive.css">
     </head>
     <body>
 
         <header>
-            <h1>Mwanga Construction Company</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
+            <nav class="navbar">
+                <div class="logo">Mwanga Construction</div>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="services.html">Services</a></li>
                     <li><a href="projects.html">Projects</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
+                <div class="hamburger">&#9776;</div>
             </nav>
         </header>
-
         <section class="hero">
-            <h2>Building Tanzania with Excellence</h2>
-            <p>Quality construction services you can trust.</p>
-            <button onclick="showMessage()">Learn More</button>
+            <h1>Building Tanzania's Future</h1>
+            <p>Quality, Integrity, Excellence</p>
+            <a href="contact.html" class="btn">Get a free Quote</a>
+        </section>
+
+        <section class="about-snippet">
+            <h2>Who We Are</h2>
+            <p>Mwanga Construction is a leading construction company in Tanzania...</p>
+            <a href="about.html" class="btn">Learn More</a>
+        </section>
+
+        <section class="services-highlight">
+            <h2>Our Services</h2>
+            <div class="cards">
+                <div class="card">Residential Construction</div>
+                <div class="card">Commercial Construction</div>
+                <div class="card">Renovation & Remodeling</div>
+            </div>
+        </section>
+
+        <section class="stats">
+            <div><h3 class="counter" data-target="150">0</h3><p>Projects Completed</p></div>
+            <div><h3 class="counter" data-target="10">0</h3><p>Years Experience</p></div>
+        </section>
+
+        <section class="testimonials">
+            <h2>What Our Clients Say</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial-active">"Excellent service and quality!"</div>
+                <div class="testimonial">"Highly professional team"</div>
+            </div>
         </section>
 
         <footer>
-            <p>2026 Mwanga Construction Company</p>
+            <p>&copy; 2026 Mwanga Construction. All Rights Reserved.</p>
         </footer>
 
-        <script src="script.js"></script>
+        <script src="main.js"></script>
     </body>
 </html>

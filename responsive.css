@@ -1,0 +1,16 @@
+@media(max-width:768px){
+    .nav-links {
+        display: none;
+        flex-direction: column;
+    }
+    .nav-links.show {
+        display: flex;
+    }
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+    .cards {
+        flex-direction: column;
+    }
+}
